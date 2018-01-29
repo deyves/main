@@ -1,0 +1,310 @@
+2017-01-10 20:19:43 ERROR  : ERROR:  permission denied for relation productlicense
+2017-01-10 20:20:04 ERROR  : ERROR:  permission denied for relation productlicense
+2017-01-10 20:20:17 ERROR  : ERROR:  relation "productlicense" does not exist
+LINE 1: SELECT * FROM productlicense;
+                      ^
+2017-01-10 20:20:38 ERROR  : ERROR:  relation "productlicense" does not exist
+LINE 1: SELECT * FROM "productlicense";
+                      ^
+2017-01-12 13:11:35 ERROR  : Error connecting to the server: FATAL:  remaining connection slots are reserved for non-replication superuser connections
+
+2017-01-12 13:12:04 ERROR  : Error connecting to the server: FATAL:  remaining connection slots are reserved for non-replication superuser connections
+
+2017-01-12 13:12:08 ERROR  : Error connecting to the server: FATAL:  remaining connection slots are reserved for non-replication superuser connections
+
+2017-01-12 13:12:20 ERROR  : Error connecting to the server: FATAL:  remaining connection slots are reserved for non-replication superuser connections
+
+2017-01-12 13:12:32 ERROR  : Error connecting to the server: FATAL:  remaining connection slots are reserved for non-replication superuser connections
+
+2017-01-12 13:15:37 ERROR  : Error connecting to the server: FATAL:  remaining connection slots are reserved for non-replication superuser connections
+
+2017-01-12 15:14:30 ERROR  : ERROR:  permission denied for relation cwd_user
+2017-01-12 15:14:56 ERROR  : ERROR:  relation "cwd_user" does not exist
+LINE 2: FROM   cwd_user u
+               ^
+2017-01-12 15:15:10 ERROR  : ERROR:  permission denied for relation cwd_user
+2017-01-13 16:17:25 ERROR  : ERROR:  syntax error at or near "Rajani"
+LINE 1: Rajani
+        ^
+2017-01-16 18:47:20 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 3: select * from issuestatus where id = 10400;
+                                           ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-01-16 19:04:17 ERROR  : ERROR:  relation "jiraworkflowscheme" does not exist
+LINE 1: select * from jiraworkflowscheme
+                      ^
+2017-01-16 19:07:29 ERROR  : ERROR:  syntax error at or near "select"
+LINE 4: select * from nodeassociation;
+        ^
+2017-01-16 19:07:41 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 4: SELECT * FROM nodeassociation
+        ^
+2017-01-16 19:11:16 ERROR  : ERROR:  relation "wf_entry" does not exist
+LINE 1: select * from wf_entry
+                      ^
+2017-01-16 19:11:24 ERROR  : ERROR:  relation "wfentry" does not exist
+LINE 1: select * from wfentry
+                      ^
+2017-01-16 19:24:10 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 1: ...jiraissue set issuestatus = 10401 where issuestatus = 10016;
+                                                               ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-01-16 19:24:39 ERROR  : ERROR:  syntax error at or near "select"
+LINE 5: select * from os_wfentry where id = 21773;
+        ^
+2017-01-18 11:51:41 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "jirauser"
+FATAL:  password authentication failed for user "jirauser"
+password retrieved from file "/Users/deyves.senger/.pgpass"
+
+2017-01-18 11:52:59 ERROR  : ERROR:  relation "produclicense" does not exist
+LINE 1: select * from produclicense;
+                      ^
+2017-01-18 12:27:22 ERROR  : ERROR:  argument of WHERE must be type boolean, not type character varying
+LINE 1: select * from jiraissue where (select issuestatus from issue...
+                                      ^
+2017-01-18 12:27:56 ERROR  : ERROR:  argument of WHERE must be type boolean, not type character varying
+LINE 1: select * from jiraissue where (select id from issuestatus wh...
+                                      ^
+2017-01-18 12:29:52 ERROR  : ERROR:  subquery has too many columns
+LINE 1: select count(*) from jiraissue where issuestatus in (select ...
+                                                         ^
+2017-01-19 11:38:06 ERROR  : ERROR:  column "Not Resolved" does not exist
+LINE 7: select id from issuestatus where pname = "Not Resolved";
+                                                 ^
+2017-01-19 11:40:01 ERROR  : ERROR:  column "Not Resolved" does not exist
+LINE 7: select * from issuestatus where pname = "Not Resolved";
+                                                ^
+2017-01-26 12:48:40 ERROR  : ERROR:  syntax error at or near "in"
+LINE 5: select * from project in ()
+                              ^
+2017-01-26 12:48:43 ERROR  : ERROR:  function project(integer) does not exist
+LINE 1: select project(1) from resolution R
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2017-01-26 12:49:43 ERROR  : ERROR:  syntax error at or near "in"
+LINE 1: select * from project in (10100,10105,10206);
+                              ^
+2017-02-02 18:46:01 ERROR  : ERROR:  more than one row returned by a subquery used as an expression
+2017-02-02 18:46:35 ERROR  : ERROR:  more than one row returned by a subquery used as an expression
+2017-02-02 18:46:51 ERROR  : ERROR:  more than one row returned by a subquery used as an expression
+2017-02-02 18:46:55 ERROR  : ERROR:  more than one row returned by a subquery used as an expression
+2017-02-02 18:48:37 ERROR  : ERROR:  syntax error at or near "="
+LINE 1: select * from propertystring where id in =(
+                                                 ^
+2017-02-02 18:55:14 ERROR  : ERROR:  column "10392" does not exist
+LINE 1: select * from propertystring where id  = "10392";
+                                                 ^
+2017-02-06 18:57:03 ERROR  : ERROR:  syntax error at or near "*"
+LINE 1: delete * from pluginstate;
+               ^
+2017-02-09 15:16:55 ERROR  : ERROR:  syntax error at or near "delet"
+LINE 1: delet from pluginstate;
+        ^
+2017-02-10 11:01:05 ERROR  : ERROR:  relation "cwd_direcotry" does not exist
+LINE 2: update cwd_direcotry set directory_position = 0 where direct...
+               ^
+2017-02-10 11:01:16 ERROR  : ERROR:  column "directory_id" does not exist
+LINE 1: ...te cwd_directory set directory_position = 0 where directory_...
+                                                             ^
+2017-02-10 11:38:05 ERROR  : ERROR:  column "jiraaction.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT * FROM jiraaction WHERE issueid NOT IN (SELECT id FRO...
+               ^
+2017-02-10 19:22:05 ERROR  : ERROR:  relation "ao_54307e_servicedesk" does not exist
+LINE 1: select * from AO_54307E_SERVICEDESK;
+                      ^
+2017-02-10 19:22:12 ERROR  : ERROR:  relation "public.ao_54307e_servicedesk" does not exist
+LINE 1: select * from public.AO_54307E_SERVICEDESK;
+                      ^
+2017-02-13 17:31:31 ERROR  : ERROR:  syntax error at or near "%"
+LINE 1: ...ct * from "AO_587B34_GLANCE_CONFIG" where JQL like %'CMBP'%;
+                                                              ^
+2017-02-13 17:31:37 ERROR  : ERROR:  column "jql" does not exist
+LINE 1: select * from "AO_587B34_GLANCE_CONFIG" where JQL like '%CMB...
+                                                      ^
+2017-02-13 17:31:56 ERROR  : ERROR:  column "jql" does not exist
+LINE 1: select * from "AO_587B34_GLANCE_CONFIG" where JQL like '%CMB...
+                                                      ^
+2017-02-13 17:32:24 ERROR  : ERROR:  column "AO_587B34_GLANCE_CONFIG.JQL" does not exist
+LINE 1: select * from "AO_587B34_GLANCE_CONFIG" where "AO_587B34_GLA...
+                                                      ^
+2017-02-13 17:32:41 ERROR  : ERROR:  column "jql" does not exist
+LINE 1: select * from "AO_587B34_GLANCE_CONFIG" where JQL like '%CMB...
+                                                      ^
+2017-02-13 17:32:50 ERROR  : ERROR:  syntax error at or near "%"
+LINE 1: ...lect * from "AO_587B34_GLANCE_CONFIG" where JQL like %CMBP%;
+                                                                ^
+2017-02-13 17:32:57 ERROR  : ERROR:  syntax error at or near ";"
+LINE 1: ...elect * from "AO_587B34_GLANCE_CONFIG" where JQL like CMBP%;
+                                                                      ^
+2017-02-13 17:33:01 ERROR  : ERROR:  column "jql" does not exist
+LINE 1: select * from "AO_587B34_GLANCE_CONFIG" where JQL like CMBP;
+                                                      ^
+2017-02-13 17:33:11 ERROR  : ERROR:  column "jql" does not exist
+LINE 1: select * from "AO_587B34_GLANCE_CONFIG" where JQL like '%CMB...
+                                                      ^
+2017-02-13 17:34:36 ERROR  : ERROR:  column "jql" does not exist
+LINE 1: select * from "AO_587B34_GLANCE_CONFIG" where JQL like '%CMB...
+                                                      ^
+2017-02-14 14:30:42 ERROR  : ERROR:  syntax error at or near ","
+LINE 1: ... from portletconfiguration where column_number = 0, position...
+                                                             ^
+2017-02-14 14:32:41 ERROR  : ERROR:  relation "gadetuserpreference" does not exist
+LINE 1: select * from gadetuserpreference
+                      ^
+2017-02-14 14:34:44 ERROR  : ERROR:  syntax error at or near "="
+LINE 1: select * from portletconfiguration = 19162
+                                           ^
+2017-02-14 14:34:53 ERROR  : ERROR:  syntax error at or near "="
+LINE 1: select * from portletconfiguration = '19162'
+                                           ^
+2017-02-14 14:40:35 ERROR  : ERROR:  duplicate key value violates unique constraint "pk_cwd_directory"
+DETAIL:  Key (id)=(10000) already exists.
+2017-02-14 14:40:42 ERROR  : ERROR:  duplicate key value violates unique constraint "pk_cwd_directory"
+DETAIL:  Key (id)=(10000) already exists.
+2017-02-14 14:53:05 ERROR  : ERROR:  duplicate key value violates unique constraint "pk_cwd_directory_attribute"
+DETAIL:  Key (directory_id, attribute_name)=(1, com.atlassian.crowd.directory.sync.lastdurationms) already exists.
+2017-02-14 15:57:01 ERROR  : ERROR:  duplicate key value violates unique constraint "pk_cwd_directory"
+DETAIL:  Key (id)=(1) already exists.
+2017-02-14 15:57:20 ERROR  : ERROR:  duplicate key value violates unique constraint "pk_cwd_directory"
+DETAIL:  Key (id)=(2) already exists.
+2017-02-14 15:59:57 ERROR  : ERROR:  relation "cwd_directory_atributte" does not exist
+LINE 2: select * from cwd_directory_atributte;
+                      ^
+2017-02-14 16:00:07 ERROR  : ERROR:  relation "cwd_directory_attributte" does not exist
+LINE 1: select * from cwd_directory_attributte;
+                      ^
+2017-02-14 16:00:16 ERROR  : ERROR:  relation "ccwd_directory_attribute" does not exist
+LINE 1: select * from ccwd_directory_attribute;
+                      ^
+2017-02-14 16:03:42 ERROR  : ERROR:  duplicate key value violates unique constraint "pk_cwd_directory"
+DETAIL:  Key (id)=(20) already exists.
+2017-02-15 13:05:08 ERROR  : ERROR:  syntax error at or near "`"
+LINE 1: SELECT * FROM `issuelinktype` WHERE linkname = "Epic-Story L...
+                      ^
+2017-02-15 13:05:14 ERROR  : ERROR:  column "Epic-Story Link" does not exist
+LINE 1: SELECT * FROM issuelinktype WHERE linkname = "Epic-Story Lin...
+                                                     ^
+2017-02-17 18:20:40 ERROR  : ERROR:  syntax error at or near "admin"
+LINE 1: ;admin
+         ^
+2017-02-17 19:07:04 ERROR  : ERROR:  relation "cwd_cirectory" does not exist
+LINE 2: update cwd_cirectory set active = 1 where id = 1;
+               ^
+2017-03-08 16:31:58 ERROR  : ERROR:  syntax error at or near "sleetc"
+LINE 1: sleetc * from issuetypescheme;
+        ^
+2017-03-08 16:32:05 ERROR  : ERROR:  relation "issuetypescheme" does not exist
+LINE 1: select * from issuetypescheme;
+                      ^
+2017-03-08 17:59:36 ERROR  : ERROR:  relation "jiraworkflow" does not exist
+LINE 1: select * from jiraworkflow;
+                      ^
+2017-03-09 11:53:51 ERROR  : ERROR:  relation "customfiel" does not exist
+LINE 1: select * from customfiel where description like '%script%'
+                      ^
+2017-03-10 16:13:09 ERROR  : ERROR:  relation "statuses" does not exist
+LINE 1: select * from statuses;
+                      ^
+2017-03-23 11:38:29 ERROR  : ERROR:  database "jira705" already exists
+2017-04-04 16:53:53 ERROR  : ERROR:  syntax error at or near "SET"
+LINE 1: select SEQUENCE_VALUE_ITEM SET seq_id = (select max(ID) from...
+                                   ^
+2017-04-04 16:54:00 ERROR  : ERROR:  syntax error at or near "="
+LINE 1: select SEQUENCE_VALUE_ITEM from seq_id = (select max(ID) fro...
+                                               ^
+2017-04-04 16:54:13 ERROR  : ERROR:  syntax error at or near "select"
+LINE 1: select from SEQUENCE_VALUE_ITEM where seq_id (select max(ID)...
+                                                      ^
+2017-04-04 16:54:19 ERROR  : ERROR:  syntax error at or near "select"
+LINE 1: select * from SEQUENCE_VALUE_ITEM where seq_id (select max(I...
+                                                        ^
+2017-04-04 16:54:25 ERROR  : ERROR:  syntax error at or near "select"
+LINE 1: select * from SEQUENCE_VALUE_ITEM where seq_id (select max(I...
+                                                        ^
+2017-04-17 12:40:20 ERROR  : ERROR:  relation "ao_e8b6cc_organization_mapping" does not exist
+LINE 2: select * from AO_E8B6CC_ORGANIZATION_MAPPING;
+                      ^
+2017-04-17 12:40:27 ERROR  : ERROR:  relation "public.ao_e8b6cc_organization_mapping" does not exist
+LINE 2: select * from public.AO_E8B6CC_ORGANIZATION_MAPPING;
+                      ^
+2017-04-19 14:42:36 ERROR  : ERROR:  relation "clusteredjobs" does not exist
+LINE 1: select * from clusteredjobs;
+                      ^
+2017-04-19 16:24:05 ERROR  : ERROR:  relation "issuetstaus" does not exist
+LINE 1: select * from issuetstaus;
+                      ^
+2017-04-19 16:40:37 ERROR  : ERROR:  syntax error at or near "resolution"
+LINE 2: select * resolution;
+                 ^
+2017-04-26 17:08:18 ERROR  : ERROR:  syntax error at or near "e"
+LINE 1: e = 1
+        ^
+2017-04-26 17:13:30 ERROR  : ERROR:  relation "jiraproject" does not exist
+LINE 1: select * from jiraproject;
+                      ^
+2017-04-27 15:02:55 ERROR  : ERROR:  relation "cwd_groups" does not exist
+LINE 2: select * from cwd_groups;
+                      ^
+2017-05-05 16:20:08 ERROR  : ERROR:  syntax error at or near "'Last Updated'"
+LINE 1: SELECT DISTINCT i.PROJECT, MIN(i.UPDATED) as 'Last Updated',...
+                                                     ^
+2017-05-05 16:20:31 ERROR  : ERROR:  relation "jiraschema.jiraissue" does not exist
+LINE 2: FROM jiraschema.jiraissue i
+             ^
+2017-05-10 18:37:38 ERROR  : ERROR:  column "2017-05-10 18:29:15.264-03" does not exist
+LINE 73: 455) and updated <= "2017-05-10 18:29:15.264-03";
+                             ^
+2017-05-11 12:08:11 ERROR  : ERROR:  syntax error at or near "sort"
+LINE 74: sort by updated desc; 
+         ^
+2017-05-25 12:55:34 ERROR  : ERROR:  column "pai" does not exist
+LINE 1: ...OIN project p ON i.project = p.id where i.issuenum = PAI-47;
+                                                                ^
+2017-05-25 12:55:39 ERROR  : ERROR:  invalid input syntax for type numeric: "PAI-47"
+LINE 1: ...N project p ON i.project = p.id where i.issuenum = 'PAI-47';
+                                                              ^
+2017-06-01 18:46:34 ERROR  : ERROR:  syntax error at end of input
+LINE 1: ...gename IN (SELECT pagename FROM portalpage GROUP BY pagename
+                                                                       ^
+2017-06-01 18:59:54 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 2: update portalpage WHERE pagename = 'ergrgre' SET username = ...
+                          ^
+2017-06-01 19:01:16 ERROR  : ERROR:  syntax error at or near "where"
+LINE 2: update portalpage where pagename = 'ergrgre' set username = ...
+                          ^
+2017-06-01 19:01:50 ERROR  : ERROR:  syntax error at or near "where"
+LINE 1: update public.portalpage where pagename = 'ergrgre' set user...
+                                 ^
+2017-06-01 19:02:11 ERROR  : ERROR:  column "admin" does not exist
+LINE 2: update portalpage set username = admin where pagename = 'erg...
+                                         ^
+2017-06-06 16:31:21 ERROR  : ERROR:  relation "cwd_drectory" does not exist
+LINE 1: select * from cwd_drectory;
+                      ^
+2017-06-14 11:15:20 ERROR  : ERROR:  operator does not exist: character varying <> integer
+LINE 74: and issuetype != 5
+                       ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-06-16 17:17:17 ERROR  : ERROR:  database "dsenger-ghs85709" is being accessed by other users
+DETAIL:  There are 6 other sessions using the database.
+2017-06-16 17:17:37 ERROR  : ERROR:  database "dsenger-ghs85709" is being accessed by other users
+DETAIL:  There are 6 other sessions using the database.
+2017-06-16 17:18:04 ERROR  : ERROR:  database "dsenger-ghs85709" is being accessed by other users
+DETAIL:  There are 6 other sessions using the database.
+2017-06-16 17:18:34 ERROR  : ERROR:  database "dsenger-ghs85709" is being accessed by other users
+DETAIL:  There are 6 other sessions using the database.
+2017-06-20 11:39:33 ERROR  : ERROR:  syntax error at or near "74"
+LINE 1: ...y_name like '%workflow%' and property_key like '%'74b8321a0c...
+                                                             ^
+2017-06-23 16:40:24 ERROR  : ERROR:  syntax error at or near "varchar"
+LINE 2: alter table jiraissue alter column summary varchar(500);
+                                                   ^
+2017-06-23 16:40:37 ERROR  : ERROR:  syntax error at or near "varchar"
+LINE 1: alter table jiraissue alter column summary varchar (500); 
+                                                   ^
+2017-06-23 16:40:45 ERROR  : ERROR:  syntax error at or near "VARCHAR"
+LINE 1: alter table jiraissue alter column summary VARCHAR (500); 
+                                                   ^
+2017-06-23 16:42:02 ERROR  : ERROR:  syntax error at or near "VARCHAR"
+LINE 2: alter table jiraissue alter column summary VARCHAR (500); 
+                                                   ^
