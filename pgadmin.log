@@ -1,4 +1,4 @@
-2017-01-10 20:19:43 ERROR  : ERROR:  permission denied for relation productlicense
+2018-01-10 20:19:43 ERROR  : ERROR:  permission denied for relation productlicense
 2017-01-10 20:20:04 ERROR  : ERROR:  permission denied for relation productlicense
 2017-01-10 20:20:17 ERROR  : ERROR:  relation "productlicense" does not exist
 LINE 1: SELECT * FROM productlicense;
